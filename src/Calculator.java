@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import
 public class Calculator {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
@@ -16,13 +16,15 @@ public class Calculator {
         System.out.println("4. Division");
 
         int choice = scanner.nextInt();
+        Addition a = new Addition();
+        Subtraction s = new Subtraction();
 
         switch (choice) {
             case 1:
-                System.out.println("Result: " + calculator.add(num1, num2));
+                System.out.println("Result: " + a.add(num1, num2));
                 break;
             case 2:
-                System.out.println("Result: " + calculator.subtract(num1, num2));
+                System.out.println("Result: " + s.subtract(num1, num2));
                 break;
             case 3:
                 System.out.println("Result: " + calculator.multiply(num1, num2));
