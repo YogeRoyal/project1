@@ -18,6 +18,7 @@ public class Calculator {
         int choice = scanner.nextInt();
         Addition a = new Addition();
         Subtraction s = new Subtraction();
+        Multiplication m = new Multiplication();
 
         switch (choice) {
             case 1:
@@ -27,7 +28,7 @@ public class Calculator {
                 System.out.println("Result: " + s.subtract(num1, num2));
                 break;
             case 3:
-                System.out.println("Result: " + calculator.multiply(num1, num2));
+                System.out.println("Result: " + m.multiply(num1, num2));
                 break;
             case 4:
                 System.out.println("Result: " + calculator.divide(num1, num2));
