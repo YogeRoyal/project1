@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import
+
 public class Calculator {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
@@ -19,6 +19,7 @@ public class Calculator {
         Addition a = new Addition();
         Subtraction s = new Subtraction();
         Multiplication m = new Multiplication();
+        Division d = new Division();
 
         switch (choice) {
             case 1:
@@ -31,7 +32,7 @@ public class Calculator {
                 System.out.println("Result: " + m.multiply(num1, num2));
                 break;
             case 4:
-                System.out.println("Result: " + calculator.divide(num1, num2));
+                System.out.println("Result: " + d.divide(num1, num2));
                 break;
             default:
                 System.out.println("Invalid Input");
